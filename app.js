@@ -7,9 +7,9 @@ const messageText = document.getElementById("message");
 const resetButton = document.getElementById("reset-button");
 
 const winningConditions = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-    [0, 4, 8], [2, 4, 6]             // Diagonals
+    [0, 1, 2], [3, 4, 5], [6, 7, 8], 
+    [0, 3, 6], [1, 4, 7], [2, 5, 8], 
+    [0, 4, 8], [2, 4, 6]             
 ];
 function handleSquareClick(event) {
     const clickedSquare = event.target;
@@ -44,8 +44,7 @@ function checkResult() {
         return;
     }
 
-    // Resolves logic parameters if all slots clear with no match lines
-    if (!board.includes("")) {
+        if (!board.includes("")) {
         messageText.textContent = "It's a Draw! ";
         isGameActive = false;
         return;
