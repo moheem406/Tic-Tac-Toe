@@ -39,14 +39,14 @@ function checkResult() {
     }
 
     if (roundWon) {
-        messageText.textContent = `Player ${currentPlayer} Wins! 🎉`;
+        messageText.textContent = `Player ${currentPlayer} Wins! `;
         isGameActive = false;
         return;
     }
 
     // Resolves logic parameters if all slots clear with no match lines
     if (!board.includes("")) {
-        messageText.textContent = "It's a Draw! 🤝";
+        messageText.textContent = "It's a Draw! ";
         isGameActive = false;
         return;
     }
