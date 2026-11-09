@@ -52,7 +52,6 @@ h2 {
 
 .square:hover {
     background-color: #1445e8;
-    transform: scale(1.03);
 }
 
 .square.x {
